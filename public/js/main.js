@@ -5,7 +5,7 @@
 // Their usage will become more apparent futher along in the tutorial.
 require.config({
   paths: {
-      jquery: 'libs/jquery/jquery-min'
+      jquery: '../bower_components/jquery/dist/jquery.min'
     , underscore: 'libs/underscore/underscore-min'
     , backbone: 'libs/backbone/backbone-min'
     , bootstrap: 'libs/bootstrap/js/bootstrap.min'
@@ -13,6 +13,7 @@ require.config({
     , handlebars: 'libs/handlebars/handlebars'
     , tpl: '../handlebars'
     , hb_help_core: 'handlebars/core'
+    , beetle: 'beetle'
   }
 });
 

@@ -13,7 +13,6 @@ require.config({
     , handlebars: 'libs/handlebars/handlebars'
     , tpl: '../handlebars'
     , hb_help_core: 'handlebars/core'
-    , beetle: 'beetle'
   }
 });
 

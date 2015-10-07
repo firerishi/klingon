@@ -1,62 +1,74 @@
+<header role="banner" class="transparent light">
+      <div class="row">
+        <div class="nav-inner row-content buffer-left buffer-right even clear-after">
+          <div id="brand">
+            <h1 class="reset"><!--<img src="img/logo.png" alt="logo">--><a href="/">Klingon World</a></h1>
+          </div><!-- brand -->
+          <a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
+        </div><!-- row-content -->  
+      </div><!-- row -->  
+    </header>
 
-<!-- <link rel="stylesheet" href="../css/component.css"> -->
-<div class="blog">
-<h1 class="page-header">Blog</h1>
-{{#unless posts}}
-    <p class="loader-text">Loading...</p>
-  {{/unless}}
-</div>
+    <main role="main">
+      
 
-<ul class="blog-list">
-  
-  {{#each posts}}
-  	<span class="date">{{date}}</span>
-  	{{#ifequal type 'link' this}}
-    <li class="link">
-    		<a href='{{url}}'>
-    			<span class="glyphicon glyphicon-link"></span>
-    			<h2>{{title}}</h2>
-      	</a>
-      	<p>{{{description}}}</p>
-    </li>
-    {{/ifequal}}
+      <div id="main" class="row">
+        <div class="row-content buffer-left buffer-right buffer-bottom clear-after">
+          
+          <div class="post-area clear-after">
+            <article role="main" class="column eleven">
+              <h1>Mad dragons &amp; bad ninjas</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              <div class="gallery slider" data-autoplay="false" data-autoheight="true">
+                <figure>
+                  <div><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></div>
+                  <div><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></div> 
+                  <div><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></div>
+                </figure>
+              </div><!-- gallery -->            
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+              <p>Sd ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+            </article>  
 
-    {{#ifequal type 'quote' this}}
-    <li class="quote">
-			<span class="glyphicon glyphicon-bookmark"></span>
-			<h4>"{{text}}"</h4>
-  		<p>{{{source}}}</p>
-    </li>
-    {{/ifequal}}
+          
 
-    {{#ifequal type 'text' this}}
-    <li class="text">
-  		<span class="glyphicon glyphicon-bullhorn"></span>
-  		<h2>{{title}}</h2>
-    	<p>{{{body}}}</p>
-    </li>
-    {{/ifequal}}
+          </div><!-- post-area -->              
 
-    {{#ifequal type 'photo' this}}
-    <li class="photo">
-			<span class="glyphicon glyphicon-camera"></span>
-			<h2>{{{caption}}}</h2>
-			{{#each photos}}
-			<img src='{{original_size.url}}'>
-			{{/each}}
-    </li>
-    {{/ifequal}}
+          <div class="meta-social">
+            <ul class="inline center">
+              <li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
+              <li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
+              <li><a href="#" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
+            </ul>
+          </div>
 
-    {{#ifequal type 'video' this}}
-    <li class="video">
-			<span class="glyphicon glyphicon-film"></span>
-			<a href='{{post_url}}'>
-				<h2>{{{caption}}}</h2>
-			</a>
-    </li>
-    {{/ifequal}}
+   
+            
+
+        </div><!-- row-content -->
+      </div><!-- row -->      
+    </main><!-- main -->
+
+    <footer role="contentinfo">
+      <div class="row">
+        <div class="row-content buffer clear-after">
+          <section id="top-footer">   
+            <div class="widget meta-social column three">
+              <h4>Follow Us</h4>
+              <ul class="inline">
+                <li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a href="#" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
+              </ul>
+            </div>                            
+          </section><!-- top-footer -->
+          <section id="bottom-footer">
+            <p class="keep-left">&copy; 2014 <a href="http://mokaine.com/" alt="Mokaine Lab">Klingon World</a>. All Rights Reserved.</p>
+            <p class="keep-right">We are the friendly warrior people!</p>
+          </section><!-- bottom-footer -->      
+        </div><!-- row-content -->  
+      </div><!-- row -->  
+    </footer>
 
 
-
-  {{/each}}
-</ul>

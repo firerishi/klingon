@@ -12,6 +12,7 @@ define([
     routes: {
 
       'home': 'showHome',
+      'details': 'showHome',
       'book': 'showBooks',
       '*actions': 'defaultAction'
 

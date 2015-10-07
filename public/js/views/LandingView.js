@@ -27,6 +27,12 @@ define([
         eventAction: 'click',
         eventLabel: 'Exploration'
       });
+
+      swal({   
+        title: "Qapla' (Success)",   
+        text: "tlhIngan maH! (We are Klingons!)",   
+        imageUrl: "img/klingon.png" 
+      });
     },
 
     explore_wild: function() {
@@ -35,6 +41,14 @@ define([
         eventCategory: 'Explore_Wild',
         eventAction: 'click',
         eventLabel: 'Exploration'
+      });
+
+      swal({   
+        title: "Look but don't touch",   
+        text: "You about to learn about our wildlife; Be safe or you won't have a chance to be sorry.",   
+        timer: 3000,   
+        type: "info",
+        showConfirmButton: false 
       });
     },
 
@@ -45,6 +59,14 @@ define([
         eventAction: 'click',
         eventLabel: 'Exploration'
       });
+
+      swal({   
+        title: "Our Prestine Places",   
+        text: "You about to learn about our safe prestine country living",   
+        timer: 3000,   
+        type: "info",
+        showConfirmButton: false 
+      });
     },
 
     explore_transport: function() {
@@ -53,6 +75,14 @@ define([
         eventCategory: 'Explore_Transport',
         eventAction: 'click',
         eventLabel: 'Exploration'
+      });
+
+      swal({   
+        title: "Our Transportation",   
+        text: "You about to learn about how to get around our city in civilian transports",   
+        timer: 3000,   
+        type: "info",
+        showConfirmButton: false 
       });
     },
 
@@ -95,19 +125,33 @@ define([
           swal.showInputError("You need to write something!");     
           return false   
         }      
-        swal("Brava!", 
-          "You will receive our multi-daily newsletters at " 
-          + inputValue, "success"); });
+        swal({
+          title: "Heghlu'meH QaQ jajvam!", 
+          text: "You will receive our multi-daily newsletters at " 
+          + inputValue, 
+          type: "success",
+          timer: 3000,
+          showConfirmButton: false
+        }); 
+      });
     },
 
     intro_read_more: function() {
-      swal("Good job!", "You clicked the button!", "success")
+      swal({
+        title: "tlhIngan maH!", 
+        text: "We appreciate your interest!", 
+        type: "info",
+        timer: 3000,
+        showConfirmButton: false
+      }); 
+
       ga('send', {
         hitType: 'event',
         eventCategory: 'Intro_Read_More',
         eventAction: 'click',
         eventLabel: 'Article'
       });
+
     },
 
     render: function(){

@@ -979,14 +979,16 @@ jQuery(document).ready(function ($) {
 
                     $this.css({
                         'position': 'absolute',
-                        'left': '52%'
+                        'left': '52%',
+                        'top': '45px'
                     });
 
                 } else if ($this.hasClass('left-mockup')) {
 
                     $this.css({
                         'position': 'absolute',
-                        'right': '52%'
+                        'right': '52%',
+                        'top': '45px'
                     });
 
                 }
